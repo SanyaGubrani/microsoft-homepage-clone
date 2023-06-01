@@ -45,6 +45,11 @@ ul {
     opacity: 0.9;
 }
 
+a:hover i{
+    margin-left: 5px;
+    transition: margin-left 0.2s ease-in-out;
+}
+
 /* Nav */
 .main-nav {
     display: flex;
@@ -240,5 +245,40 @@ ul {
     line-height: 2.8;
 }
 
+/* Footer */
+.main-footer{
+    background: #f2f2f2 ;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+}
 
+.inner-footer{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.main-footer div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.main-footer div i{
+    padding-right: 10px;
+}
+
+.main-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
