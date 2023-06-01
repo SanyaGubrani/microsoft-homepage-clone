@@ -8,7 +8,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
  }
 
@@ -197,3 +197,22 @@ ul {
     font-size: 16px;
 }
 
+/* social icons */
+
+.social img{
+    width: 32px;
+}
+
+.social{
+    display: flex; 
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.social *{
+    padding-left: 6px;
+}
+
+.social img:hover{
+    opacity: 0.9;
+}
