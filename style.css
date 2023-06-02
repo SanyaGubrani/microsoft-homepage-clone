@@ -171,7 +171,7 @@ a:hover i{
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 35px;
+    margin-bottom: 80px;
     margin-top: 20px;
     grid-gap: 23px;
 }
@@ -225,17 +225,19 @@ a:hover i{
 /* social icons */
 
 .social img{
-    width: 32px;
+    width: 40px;
 }
 
 .social{
     display: flex; 
     align-items: center;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
+    margin-bottom: 100px;
+    font-size: 16px;
 }
 
 .social *{
-    padding-left: 6px;
+    padding-left: 8px;
 }
 
 .social img:hover{
@@ -252,7 +254,7 @@ a:hover i{
 }
 
 .inner-links{
-    max-width: 1100px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
@@ -263,6 +265,12 @@ a:hover i{
 
 .links li{
     line-height: 2.8;
+    color: #616161;
+}
+
+.links h3{
+    font-weight: 600;
+    color: #616161;
 }
 
 /* Footer */
@@ -270,16 +278,18 @@ a:hover i{
     background: #f2f2f2 ;
     color: #616161;
     font-size: 12px;
-    padding: 20px 0;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .inner-footer{
-    max-width: 1100px;
+    /*max-width: 1100px;*/
     margin: 0 auto;
     padding: 0 20px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .main-footer div{
@@ -287,6 +297,7 @@ a:hover i{
     display: flex;
     align-items: center;
     padding-left: 10px;
+    margin-left: 45px;
 }
 
 .main-footer div i{
@@ -296,6 +307,7 @@ a:hover i{
 .main-footer ul{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 100px;
 }
 
 .main-footer li{
