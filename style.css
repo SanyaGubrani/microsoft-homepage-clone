@@ -248,7 +248,7 @@ a:hover i{
 
 .links{
     background-color: #f2f2f2;
-    color: #262626;
+    color: #616161;
     font-size: 12px;
     padding: 35px 0;
 }
@@ -273,6 +273,12 @@ a:hover i{
     color: #616161;
 }
 
+.links a:hover{
+    font-weight: 500;
+    color: black;
+    text-decoration: underline black;
+}
+
 /* Footer */
 .main-footer{
     background: #f2f2f2 ;
@@ -292,18 +298,6 @@ a:hover i{
     width: 100%;
 }
 
-.main-footer div{
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin-left: 45px;
-}
-
-.main-footer div i{
-    padding-right: 10px;
-}
-
 .main-footer ul{
     display: flex;
     flex-wrap: wrap;
@@ -313,7 +307,58 @@ a:hover i{
 .main-footer li{
     margin-right: 30px;
     margin-bottom: 20px;
+    color: #616161;
 }
+
+.main-footer li a{
+    color: #616161;
+}
+
+.main-footer li a:hover{
+    font-weight: 500;
+    color: black;
+    text-decoration: underline black;
+}
+
+.side-list ul{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 80px;
+}
+
+.side-list ul li{
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-list i{
+    padding-right: 10px;
+}
+
+.side-list img{
+    width: 45px;
+    padding: 5px;
+}
+
+
+.side-list ul li:hover{
+    cursor: pointer;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline black;
+}
+
+.side-list ul:nth-of-type(2){
+    margin-right: 100px;
+}
+
+
+
 
 /* Responsive (Media-queries) */
 
