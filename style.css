@@ -6,10 +6,11 @@
 
  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
     background-color: white;
     color: black;
-    font-size: 15.5px;
-    line-height: 1.5;
  }
 
 a {
@@ -89,6 +90,7 @@ a:hover i{
     flex: 1;
     margin-left: 20px;
 }
+
 
 
 /* Showcase */ 
@@ -293,6 +295,7 @@ a:hover i{
     margin: 0 auto;
     padding: 0 20px 0 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -302,6 +305,8 @@ a:hover i{
     display: flex;
     flex-wrap: wrap;
     margin-right: 100px;
+    white-space: nowrap;
+    flex-direction: row;
 }
 
 .main-footer li{
@@ -326,6 +331,7 @@ a:hover i{
     align-items: center;
     padding-left: 10px;
     margin-left: 80px;
+    white-space: nowrap;
 }
 
 .side-list ul li{
@@ -358,17 +364,13 @@ a:hover i{
 }
 
 
-
-
 /* Responsive (Media-queries) */
 
-@media(max-width:860px) {
+
+@media(max-width: 860px) {
     .hide {
         display: none;
     }
-}
-
-@media(max-width: 860px) {
 
     .menu-btn{
         display: block;
@@ -376,19 +378,23 @@ a:hover i{
         left: 30px;
         top: 20px;
     }
+
     .menu-btn:hover{
         opacity: 0.9;
         cursor: pointer;
     }
+
     .main-nav .logo {
         display: block;
         position: absolute;
-        left: 50%;
+        left: 45%;
         top: 20px;
         transform: translateX(-50%);
     }
+
     .main-nav ul li{
         cursor: pointer;
+        margin-left: 10px;
     }
 
     .right-menu li:nth-of-type(2) i{
@@ -400,5 +406,42 @@ a:hover i{
 
 }
  
+@media(max-width: 700px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+      
+    .showcase .inner-content{
+        display: none;
+    }
+
+    .links .inner-links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media(max-width: 500px){
+
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .links .inner-links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links .inner-links ul{
+        margin-bottom: 20px;
+    }
+
+    .main-footer {
+        justify-content: flex-start;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+
 
 
